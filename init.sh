@@ -3,19 +3,18 @@ IFS=$'\n'
 
 
 
-for file in $(find ./input -type f -name "*.swf");
+# for file in $(find ./input -type f -name "*.swf");
 
 
-do
-echo "processing file : $file";
+# do
+# echo "processing file : $file";
 
-./jpexs/ffdec.bat -zoom 2 -export shape "./output"   "$file"
+# ./jpexs/ffdec.bat -format sprite:svg -zoom 2 -export sprite "./output"   "$file"
 
-node ./combine_svgs.js "$file"
+# node ./combine_svgs.js "$file"
 
-#node swf.js "$file";
 
-done;
+# done;
 
 
 
